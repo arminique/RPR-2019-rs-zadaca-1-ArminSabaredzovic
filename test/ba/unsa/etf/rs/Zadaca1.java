@@ -1,8 +1,6 @@
 package ba.unsa.etf.rs;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Zadaca1 {
     public static ArrayList <String> listaGradova = new ArrayList<>();
@@ -28,7 +26,7 @@ public class Zadaca1 {
         System.out.println(listaGradova.get(brojac));
         return listaDrzava.get(brojac);
     }
-    static void najvecaSuma(int... brojevi){
+    static int najvecaSuma(int... brojevi){
         ArrayList <Integer> lista_preuzetih = new ArrayList<>();
         ArrayList <Integer> konacni_broj = new ArrayList<>();
         int najvecaSuma = 0;
@@ -61,6 +59,7 @@ public class Zadaca1 {
         for(int i2 = 0; i2 < konacni_broj.size(); i2++){
             System.out.print(konacni_broj.get(i2));
         }
+        return najvecaSuma;
     }
     static void najmanjaSrednjaVrijednost(ArrayList <String> matrica){
         ArrayList lista_vrednosti = new ArrayList<>();
@@ -107,7 +106,7 @@ public class Zadaca1 {
         for(int i = 0; i < matrica.size(); i++){
             if(count == pozicija_elemenata){
                 if(!matrica.get(i).equals("#")) {
-                    System.out.println(Double.parseDouble(matrica.get(i)) + " ");
+                    System.out.print((int)(Double.parseDouble(matrica.get(i))) + " ");
                 }
             }
             if(matrica.get(i).equals("#")){
