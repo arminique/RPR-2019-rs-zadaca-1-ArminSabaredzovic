@@ -1,4 +1,4 @@
-package ba.unsa.etf.rs;
+/*package ba.unsa.etf.rs;
 
 import org.junit.jupiter.api.*;
 
@@ -201,3 +201,4 @@ public class StdIOTest {
         assertEquals(expectedOutput, outContent.toString().trim());
     }
 }
+*/
